@@ -1,1 +1,0 @@
-﻿pyinstaller --onefile --icon=sendtele.ico sendtele.py
