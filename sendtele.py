@@ -30,7 +30,7 @@ if len(sys.argv) >= 2:
     print('메시지 내용 :', val1)
 else:
     print('메시지 내용이 없습니다.')
-    print('사용법 : sendtele.exe "메시지 내용"')
+    print('사용법 : python3 sendtele.py "메시지 내용"')
     sys.exit()
 
 # 메시지 전송
