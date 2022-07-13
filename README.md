@@ -2,7 +2,7 @@
 
 <사용 방법>
 
-00.텔레그램 telegram_token, chat_id 가져오기(인터넷 검색)
+00.텔레그램 telegram_token, chat_id 알아내기(인터넷 검색)
 
 01.requests모듈이 없다면 pip install requests
 
