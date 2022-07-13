@@ -1,5 +1,5 @@
-# pip3 install python-telegram-bot
-# import telegram
+# python-telegram-bot 모듈 대신 requests로 대체
+
 import sys
 import configparser
 import os
@@ -10,7 +10,7 @@ sendtele_version = 1.0
 print('sendtele 버전:', sendtele_version)
 # 윈도우 (exe)
 #sendtele_path = sys.executable[:-13]
-# 우분투
+# 우분투, 윈도우 (.py)
 sendtele_path = os.path.dirname(os.path.realpath(__file__))
 print('sendtele 경로:', sendtele_path)
 
