@@ -7,7 +7,7 @@
 00.텔레그램 봇 생성, 토큰, 챗아이디 얻기(인터넷 검색)
    
 01.텔레그램 파이썬 모듈 설치  
-      pip3 install python-telegram-bot
+      pip3 install requests
    
 02.텔레그램 토큰, 챗아이디를 sendtele.ini 파일에 입력
   
