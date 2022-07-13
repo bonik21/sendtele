@@ -1,5 +1,4 @@
 # python-telegram-bot 모듈 대신 requests로 대체
-
 import sys
 import configparser
 import os
@@ -10,7 +9,7 @@ sendtele_version = 1.0
 print('sendtele 버전:', sendtele_version)
 # 윈도우 (exe)
 #sendtele_path = sys.executable[:-13]
-# 우분투, 윈도우 (.py)
+# 우분투
 sendtele_path = os.path.dirname(os.path.realpath(__file__))
 print('sendtele 경로:', sendtele_path)
 
@@ -21,6 +20,7 @@ settings = config['SETTINGS']
 my_telegram_token = settings["telegram_token"]
 my_chat_id = settings["chat_id"]
 
+# 전달 변수 확인
 if len(sys.argv) >= 2:
     message = sys.argv[1]
     print('chat_id :', my_chat_id)
@@ -30,6 +30,7 @@ else:
     print('사용법 : python3 sendtele.py "메시지 내용"')
     sys.exit()
 
+# 메시지 전송
 def send_msg(text):
    token = my_telegram_token
    chat_id = my_chat_id
